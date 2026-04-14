@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --color-bg: #F5F7FA;
+  --color-dark: #1A1C1E;
+  --color-accent: #E11D48;
+  --color-gray: #64748B;
+  --color-border: #E2E8F0;
+}
+
+:root {
+  --bg: #F5F7FA;
+  --dark: #1A1C1E;
+  --accent: #E11D48;
+  --gray: #64748B;
+  --white: #FFFFFF;
+  --border: #E2E8F0;
+  --f-sans: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--f-sans);
+  background-color: var(--bg);
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+.btn-shadow {
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.4);
+}
+
+.card-shadow {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
