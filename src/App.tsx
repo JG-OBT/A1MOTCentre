@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import TopBanner from './components/TopBanner';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustSignals from './components/TrustSignals';
@@ -19,7 +18,6 @@ import CookieBanner from './components/CookieBanner';
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <TopBanner />
       <Navbar />
       <main className="flex-grow">
         <Hero />
